@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+:root {
+  --color1: #ccd5ae;
+  --color2: #e9edc9;
+  --color3: #fefae0;
+  --color4: #faedcd;
+  --color5: #fefcf3;
+  --color6: #f5ebe0;
+  --color7: #f0dbdb;
+  --color8: #dba39a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* MAIN */
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color3);
+}
+
+/* Header */
+
+header {
+  width: 100%;
+  height: 65px;
+  background-color: var(--color5);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+  /* Fixear el header en el top */
+  position: fixed;
+  top: 0;
+  /* Para que se vea siempre por encima */
+  z-index: 2;
+}
+
+.navbar,
+.navbar-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  gap: 150px;
+}
+
+.navbar-list {
+  gap: 50px;
+}
+
+.navbar-list li:first-child > a {
+  color: var(--color8);
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.navbar-list a {
+  color: var(--color8);
+  font-weight: 900px;
+}
+
+.logo-lana {
+  padding-top: 2px;
+  border-radius: 50px;
+}
+
+/* Products */
+
+#products-main {
+  display: flex;
+  max-width: 1200px;
+  min-width: 900px;
+  margin-top: 70px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 70px 0px;
+  gap: 15px;
+}
+
+.name-landing h1 {
+  min-width: 600px;
+  font-size: 70px;
+  color: var(--color8);
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.products {
+  max-width: 1200px;
+  min-width: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.winter1,
+.winter2,
+.winter3,
+.winter4 {
+  min-width: 200px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--color6);
+  padding: 2px;
+}
+
+.img-winter {
+  min-width: 200px;
+  min-height: 310px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-coleccion {
+  border: black 0.5px solid;
+  padding: 1px 1px;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.text {
+  font-size: 30px;
+  font-weight: bolder;
+  color: var(--color8);
+}
+
+/* Services */
+
+#container-services {
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.services1,
+.services2,
+.services3 {
+  min-width: 333px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.services1 {
+  display: flex;
+  margin-left: -40px;
+}
+
+.payment-type {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+.payment-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.oferta1 {
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.oferta2 {
+  font-size: 10px;
+  font-weight: bolder;
+}
+
+.payment-online {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.online-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.details1 {
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.details2 {
+  font-size: 10px;
+  font-weight: bolder;
+}
+
+.shipping {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.shipping-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.shipping1 {
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.shipping2 {
+  font-size: 10px;
+  font-weight: bolder;
+}
+
+/* Other products */
+
+#others-product {
+  padding: 70px;
+  width: 1200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#others-product p {
+  font-size: 20px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.accesories,
+.liquidacion,
+.trabajos-medida {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  background-color: var(--color7);
+  min-width: 300px;
+  min-height: 275px;
+}
