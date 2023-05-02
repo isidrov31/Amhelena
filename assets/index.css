@@ -28,7 +28,13 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--color3);
+  background: rgb(254, 250, 224);
+  background: linear-gradient(
+    90deg,
+    rgba(254, 250, 224, 1) 17%,
+    rgba(250, 237, 205, 1) 50%,
+    rgba(254, 250, 224, 1) 87%
+  );
 }
 
 /* Header */
@@ -36,7 +42,13 @@ main {
 header {
   width: 100%;
   height: 65px;
-  background-color: var(--color5);
+  background: rgb(254, 231, 224);
+  background: linear-gradient(
+    90deg,
+    rgba(254, 231, 224, 1) 10%,
+    rgba(219, 163, 154, 1) 50%,
+    rgba(254, 231, 224, 1) 90%
+  );
   display: flex;
   justify-content: space-between;
   padding: 0 30px;
@@ -63,13 +75,13 @@ header {
 }
 
 .navbar-list li:first-child > a {
-  color: var(--color8);
+  color: black;
   font-size: 20px;
   font-weight: bolder;
 }
 
 .navbar-list a {
-  color: var(--color8);
+  color: black;
   font-weight: 900px;
 }
 
@@ -95,7 +107,16 @@ header {
 .name-landing h1 {
   min-width: 600px;
   font-size: 70px;
-  color: var(--color8);
+  background: rgb(254, 231, 224);
+  background: linear-gradient(
+    90deg,
+    rgba(254, 231, 224, 1) 10%,
+    rgba(13, 3, 1, 0.8548012955182073) 50%,
+    rgba(254, 231, 224, 1) 90%
+  );
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
   font-weight: bolder;
   display: flex;
   align-items: center;
@@ -143,7 +164,16 @@ header {
 .text {
   font-size: 30px;
   font-weight: bolder;
-  color: var(--color8);
+  background: rgb(212, 192, 186);
+  background: linear-gradient(
+    90deg,
+    rgba(212, 192, 186, 1) 10%,
+    rgba(13, 3, 1, 0.8548012955182073) 50%,
+    rgba(212, 192, 186, 1) 90%
+  );
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 /* Services */
