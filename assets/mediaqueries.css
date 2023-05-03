@@ -50,6 +50,8 @@
 
   #products-main {
     width: 90%;
+    max-width: unset;
+    min-width: unset;
   }
 
   .temporada1 {
@@ -59,7 +61,7 @@
   .products {
     order: 2;
     flex-direction: column;
-    max-width: 760px;
+    width: 90%;
     min-width: unset;
   }
 
