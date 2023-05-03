@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+:root {
+  --color1: #ccd5ae;
+  --color2: #e9edc9;
+  --color3: #fefae0;
+  --color4: #faedcd;
+  --color5: #fefcf3;
+  --color6: #f5ebe0;
+  --color7: #f0dbdb;
+  --color8: #dba39a;
+}
+
+/* Diseño responsive tablet */
+
+@media (max-width: 760px) {
+  /* Navbar */
+
+  .navbar {
+    gap: 10px;
+  }
+
+  .logo-lana {
+    z-index: 3;
+  }
+
+  .navbar-list {
+    position: absolute;
+    top: 65px;
+    left: 5%;
+    right: 5%;
+    width: 90%;
+    flex-direction: column;
+    background-color: var(--color5);
+    border-top: 0px;
+    border-radius: 0px 0px 15px 15px;
+    align-items: center;
+    padding: 45px 30px;
+    gap: 20px;
+    z-index: 2;
+    display: none;
+  }
+
+  .menu-label {
+    display: flex;
+    cursor: pointer;
+  }
+
+  /* Products Main */
+
+  #products-main {
+    width: 90%;
+  }
+
+  .temporada1 {
+    order: 1;
+  }
+
+  .products {
+    order: 2;
+    flex-direction: column;
+    max-width: 760px;
+    min-width: unset;
+  }
+
+  .winter1,
+  .winter2,
+  .winter3,
+  .winter4 {
+    width: 500px;
+  }
+
+  #container-services {
+    max-width: 750px;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-direction: column;
+  }
+  .services1,
+  .services2,
+  .services3 {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+  }
+
+  .services1 {
+    margin-left: unset;
+  }
+
+  .payment-online,
+  .shipping,
+  .payment-type {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    min-width: 310px;
+  }
+
+  #others-product {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 15px;
+  }
+
+  .accesories,
+  .liquidacion,
+  .trabajos-medida {
+    min-width: unset;
+    width: 80%;
+  }
+
+  #menu-toggle:checked + .navbar-list {
+    display: flex;
+  }
+}

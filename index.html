@@ -9,18 +9,26 @@
     , initial-scale=1.0"
     />
     <link rel="stylesheet" href="assets/index.css" />
+    <link rel="stylesheet" href="assets/mediaqueries.css" />
     <title>Amhelena Landing</title>
   </head>
   <body>
     <header>
       <img
-        src="assets/bola-de-hilo.png"
+        src="assets/img/bola-de-hilo.png"
         alt=""
         class="logo-lana"
         width="100px"
         height="100px"
       />
       <nav class="navbar">
+        <!-- Agregamos label con la img del menu adentro y el input a su vez, los linkeamos entre si -->
+
+        <label for="menu-toggle" class="menu-label">
+          <img src="assets/img/menu.png" alt="" width="50px" />
+        </label>
+        <input type="checkbox" id="menu-toggle" />
+
         <ul class="navbar-list">
           <li><a href="">Descubre</a></li>
           <li><a href="">Coleccion 2023</a></li>
@@ -43,7 +51,7 @@
         <div class="products">
           <div class="winter1">
             <div class="img-winter">
-              <img src="assets/poncho.png" alt="poncho" width="200px" />
+              <img src="assets/img/poncho.png" alt="poncho" width="200px" />
             </div>
             <div>
               <button class="btn-coleccion">Ver Colección</button>
@@ -52,7 +60,7 @@
 
           <div class="winter2">
             <div class="img-winter">
-              <img src="assets/sweater.png" alt="sweater" height="200px" />
+              <img src="assets/img/sweater.png" alt="sweater" height="200px" />
             </div>
             <div>
               <button class="btn-coleccion">Ver Colección</button>
@@ -60,7 +68,7 @@
           </div>
           <div class="winter3">
             <div class="img-winter">
-              <img src="assets/cardigan.png" alt="cardigan" width="200px" />
+              <img src="assets/img/cardigan.png" alt="cardigan" width="200px" />
             </div>
             <div>
               <button class="btn-coleccion">Ver Colección</button>
@@ -68,7 +76,7 @@
           </div>
           <div class="winter4">
             <div class="img-winter">
-              <img src="assets/chaqueta.PNG" alt="chaqueta" width="200px" />
+              <img src="assets/img/chaqueta.PNG" alt="chaqueta" width="200px" />
             </div>
             <div>
               <button class="btn-coleccion">Ver Colección</button>
@@ -82,7 +90,7 @@
       <section id="container-services">
         <div class="services1">
           <div class="payment-type">
-            <img src="assets/dolar.png" alt="logo pesos" width="30px" />
+            <img src="assets/img/dolar.png" alt="logo pesos" width="30px" />
             <div class="payment-details">
               <span class="oferta1">15% OFF TRANSFERENCIA</span>
               <span class="oferta2">20% OFF EN COMPRAS MAYORES A 20000</span>
@@ -92,7 +100,7 @@
         <div class="services2">
           <div class="payment-online">
             <img
-              src="assets/pago-en-linea.png"
+              src="assets/img/pago-en-linea.png"
               alt="logo mercado pago"
               width="30px"
             />
@@ -104,7 +112,7 @@
         </div>
         <div class="services3">
           <div class="shipping">
-            <img src="assets/enviado.png" alt="logo envio" width="30px" />
+            <img src="assets/img/enviado.png" alt="logo envio" width="30px" />
             <div class="shipping-details">
               <span class="shipping1">ENVÍO GRATIS A PARTIR DE $30.000</span>
               <span class="shipping2">A todo el país </span>
@@ -115,14 +123,18 @@
       <section id="others-product">
         <div class="accesories">
           <img
-            src="assets/accesorios.png"
+            src="assets/img/accesorios.png"
             alt="foto de accesorios"
             width="200px"
           />
           <p>Accesorios</p>
         </div>
         <div class="liquidacion">
-          <img src="assets/remeras.png" alt="foto de remeras" width="200px" />
+          <img
+            src="assets/img/remeras.png"
+            alt="foto de remeras"
+            width="200px"
+          />
           <p>Temporada Primavera-Verano 2022</p>
         </div>
         <div class="trabajos-medida">

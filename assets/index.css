@@ -289,3 +289,10 @@ header {
   min-width: 300px;
   min-height: 275px;
 }
+
+/* Menu hamburguesa y checboxes */
+
+#menu-toggle,
+.menu-label {
+  display: none;
+}
