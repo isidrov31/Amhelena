@@ -41,9 +41,8 @@ main {
 /* Header */
 
 header {
-  width: 100%;
+  width: 100vw;
   height: 65px;
-  background: rgb(254, 231, 224);
   background: linear-gradient(
     90deg,
     rgba(254, 231, 224, 1) 10%,
@@ -52,7 +51,7 @@ header {
   );
   display: flex;
   justify-content: space-between;
-  padding:0px
+  padding:0px;
   /* Fixear el header en el top */
   position: fixed;
   top: 0;
@@ -97,8 +96,7 @@ header {
 
 #products-main {
   display: flex;
-  max-width: 1200px;
-  min-width: 900px;
+  width: 100%;
   margin-top: 70px;
   flex-direction: column;
   align-items: center;
@@ -127,11 +125,10 @@ header {
 }
 
 .products {
-  max-width: 1200px;
-  min-width: 900px;
+  width: 95%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 10px;
 }
 
@@ -139,18 +136,16 @@ header {
 .winter2,
 .winter3,
 .winter4 {
-  min-width: 200px;
-  min-height: 300px;
+ width: 30%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
+flex-wrap: wrap;
+justify-content: center;
   background-color: var(--color6);
-  padding: 2px;
+
 }
 
 .img-winter {
-  min-width: 200px;
+
   min-height: 310px;
   display: flex;
   align-items: center;
@@ -182,16 +177,17 @@ header {
 /* Services */
 
 #container-services {
-  width: 1200px;
+  width: 100vw;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: center;
+  gap: 5px;
 }
 
 .services1,
 .services2,
 .services3 {
-  min-width: 333px;
+  
   display: flex;
   align-items: center;
   justify-content: center;
@@ -268,10 +264,11 @@ header {
 
 #others-product {
   padding: 70px;
-  width: 1200px;
+  width: 100vw;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  gap: 5px;
 }
 
 #others-product p {
@@ -287,9 +284,10 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
   gap: 5px;
   background-color: var(--color7);
-  min-width: 300px;
+
   min-height: 275px;
 }
 
