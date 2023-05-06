@@ -137,3 +137,67 @@
     display: flex;
   }
 }
+
+@media (max-width:576px){
+.name-landing h1{
+  min-width: unset;
+  width: 100%;
+  font-size: 40px;
+}
+
+.logo-lana{
+  width: 34%;
+  padding: 2px;
+}
+
+.menu-label {
+  position: absolute;
+  left: 75%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+}
+
+.cart-label {
+  position: absolute;
+  left: 90%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.text {
+    font-size: 20px;
+    font-weight: bolder;
+    background: rgb(212, 192, 186);
+    background: linear-gradient( 90deg, rgba(212, 192, 186, 1) 10%, rgba(13, 3, 1, 0.8548012955182073) 50%, rgba(212, 192, 186, 1) 90% );
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.winter1, .winter2, .winter3, .winter4 {
+  width: 80%;
+}
+
+.img-winter {
+    min-height: 310px;
+    max-height: 310px;
+    max-width: 200px;
+    min-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.accesories, .liquidacion, .trabajos-medida {
+  min-width: unset;
+  width: 150%;
+}
+
+.rr-ss {
+  gap: 25px;
+}
+
+}
