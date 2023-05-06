@@ -47,6 +47,15 @@
     position: absolute;
     left: 85%;
     display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .cart-label{
+    position: absolute;
+    left: 95%;
+    display: flex;
+    align-items: center;
     cursor: pointer;
   }
 

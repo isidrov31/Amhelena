@@ -24,6 +24,7 @@
 
 main {
   width: 100%;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -51,7 +52,7 @@ header {
   );
   display: flex;
   justify-content: space-between;
-  padding: 0 30px;
+  padding:0px
   /* Fixear el header en el top */
   position: fixed;
   top: 0;
@@ -67,6 +68,8 @@ header {
 }
 
 .navbar {
+  display: flex;
+  align-items: center;
   gap: 150px;
 }
 
@@ -290,9 +293,93 @@ header {
   min-height: 275px;
 }
 
+footer{
+  width: 100%;
+  background-color: var(--color1);
+  color: var(--color3);
+  display: flex;
+  flex-direction: column;
+  gap: 30px ;
+}
+
+.rr-ss{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  font-size: 20px;
+}
+
+.rr-ss a{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around ;
+  gap: 20px ;
+  padding-top: 10px;
+
+}
+
+.footer-links{
+  display: flex;
+ flex-direction: column;
+  gap: 20px;
+  font-size: 20px;
+}
+
+.footer-links a{
+color: var(--color3);
+  }
+
 /* Menu hamburguesa y checboxes */
 
 #menu-toggle,
+#cart-toggle,
 .menu-label {
   display: none;
+}
+
+
+/* DAMOS FORMATO AL CARRITO */
+
+.cart{
+  position: absolute;
+  top: 65px;
+  right: 0px;
+  padding: 30px 30px;
+  background: linear-gradient(
+    90deg,
+    rgba(254, 231, 224, 1) 10%,
+    rgba(194, 162, 155, 0.855) 50%,
+    rgba(254, 231, 224, 1) 90%
+  );
+  border-left: 1px solid var(--color5);
+  display: flex;
+  flex-direction: column;
+  height: 70%;
+  overflow-y: scroll;
+  z-index: 2;
+  gap: 20px;
+  display: none;
+}
+
+.cart::-webkit-scrollbar{
+  display: none;
+}
+
+.cart h2{
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.cart-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:10px;
+  background-color: var(--color1);
+  padding: 10px;
+  border: 1px solid var(--color1);
+  border-radius: 10px;
 }

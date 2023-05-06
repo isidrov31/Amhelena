@@ -22,7 +22,7 @@
         height="100px"
       />
       <nav class="navbar">
-        <!-- Agregamos label con la img del menu adentro y el input a su vez, los linkeamos entre si -->
+<!-- Agregamos label con la img del menu adentro y el input a su vez, los linkeamos entre si -->
 
         <label for="menu-toggle" class="menu-label">
           <img src="assets/img/menu.png" alt="" width="50px" />
@@ -35,16 +35,100 @@
           <li><a href="">Temporadas Anteriores</a></li>
           <li><a href="">Pedidos a Medida</a></li>
         </ul>
+<!-- AGREGAMOS INPUT Y LABEL PARA EL CARRITO -->
+      <label for="cart-toggle" class="cart-label">
         <img
           src="assets/img/carrito-de-compras.png"
           alt=""
           class="logo-carrito"
           width="50px"
         />
+      </label>
+      <input type="checkbox" id="cart-toggle">
+
+<!-- AGREGAMOS EL CARRITO Y LO MAQUETAMOS -->
+<div class="cart">
+  <h2>Tu carrito</h2>
+  <div class="cart-item">
+    <img src="assets/img/cardigan.png" width="50px" height="50px" alt="">
+    <div class="item-info">
+      <h3 class="item-title">CARDIGAN</h3>
+      <p class="item-price">Precio Actual</p>
+      <span class="item-price">10.000$</span>
+    </div>
+    <div class="item-handler">
+      <span class="quantity-handler-down">-</span>
+      <span class="quantity-handler-item">1</span>
+      <span class="quantity-handler-up">+</span>
+    </div>
+  </div>
+  <div class="cart-item">
+    <img src="assets/img/cardigan.png" width="50px" height="50px" alt="">
+    <div class="item-info">
+      <h3 class="item-title">CARDIGAN</h3>
+      <p class="item-price">Precio Actual</p>
+      <span class="item-price">10.000$</span>
+    </div>
+    <div class="item-handler">
+      <span class="quantity-handler-down">-</span>
+      <span class="quantity-handler-item">1</span>
+      <span class="quantity-handler-up">+</span>
+    </div>
+  </div>
+  <div class="cart-item">
+    <img src="assets/img/cardigan.png" width="50px" height="50px" alt="">
+    <div class="item-info">
+      <h3 class="item-title">CARDIGAN</h3>
+      <p class="item-price">Precio Actual</p>
+      <span class="item-price">10.000$</span>
+    </div>
+    <div class="item-handler">
+      <span class="quantity-handler-down">-</span>
+      <span class="quantity-handler-item">1</span>
+      <span class="quantity-handler-up">+</span>
+    </div>
+  </div>
+  <div class="cart-item">
+    <img src="assets/img/cardigan.png" width="50px" height="50px" alt="">
+    <div class="item-info">
+      <h3 class="item-title">CARDIGAN</h3>
+      <p class="item-price">Precio Actual</p>
+      <span class="item-price">10.000$</span>
+    </div>
+    <div class="item-handler">
+      <span class="quantity-handler-down">-</span>
+      <span class="quantity-handler-item">1</span>
+      <span class="quantity-handler-up">+</span>
+    </div>
+  </div>
+  <div class="cart-item">
+    <img src="assets/img/cardigan.png" width="50px" height="50px" alt="">
+    <div class="item-info">
+      <h3 class="item-title">CARDIGAN</h3>
+      <p class="item-price">Precio Actual</p>
+      <span class="item-price">10.000$</span>
+    </div>
+    <div class="item-handler">
+      <span class="quantity-handler-down">-</span>
+      <span class="quantity-handler-item">1</span>
+      <span class="quantity-handler-up">+</span>
+    </div>
+  </div>
+  <span class="divider"></span>
+  <div class="cart-total">
+    <p>TOTAL</p>
+    <span>XXXX</span>
+  </div>
+  <button class="btn-add">COMPRAR</button>
+</div>
+<!-- FIN DEL CARRITO -->
       </nav>
     </header>
 
+<!-- MAIN -->
     <main>
+
+<!-- PRODUCTOS PRINCIPALES -->
       <section id="products-main">
         <div class="name-landing"><h1>AMHELENA</h1></div>
 
@@ -87,6 +171,7 @@
           <span class="text">TEMPORADA OTOÑO INVIERNO</span>
         </div>
       </section>
+<!-- SERVICIOS DE PAGO -->
       <section id="container-services">
         <div class="services1">
           <div class="payment-type">
@@ -120,6 +205,7 @@
           </div>
         </div>
       </section>
+<!-- OTROS PRODUCTOS -->
       <section id="others-product">
         <div class="accesories">
           <img
@@ -144,5 +230,25 @@
         </div>
       </section>
     </main>
+<!-- FOOTER -->
+<footer>
+  <div >
+    <ul class="rr-ss">
+    <a href=""><img src="assets/img/instagram.png" width="70px" alt="">INSTAGRAM</a> 
+    <a href=""><img src="assets/img/facebook.png" width="70px" alt="">FACEBOOK</a> 
+    <a href=""><img src="assets/img/pinterest.png"  width="70px" alt="">PINTEREST</a> 
+    </ul>
+  </div>
+  <div >
+    <ul class="footer-links">
+    <li><a href="">Términos de uso</a></li>
+    <li><a href="">Trabajá con nosotros</a></li>
+    <li><a href="">Soporte</a></li>
+  </ul>
+  </div>
+
+
+  <p>Hecho con ❤️ en <span>NUCBACRYPTO</span></p>
+</footer>
   </body>
 </html>
