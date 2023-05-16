@@ -1,0 +1,159 @@
+:root {
+  --color1: #ccd5ae;
+  --color2: #e9edc9;
+  --color3: #fefae0;
+  --color4: #faedcd;
+  --color5: #fefcf3;
+  --color6: #f5ebe0;
+  --color7: #f0dbdb;
+  --color8: #dba39a;
+}
+
+/* Agregamos el scroll behavior smooth para que se mas suve la navegacion */
+
+/* scroll padding top para cuando se clickea en el link del menu */
+
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 65px;
+}
+
+
+/* Efecto glass */
+
+.overlay{
+  position: absolute;
+  top: 65px;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 1;
+  /* Efecto glass */
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px 0 rgb(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  display: none;
+}
+
+#cart-toggle:checked ~ .overlay{
+  display: block;
+}
+
+#menu-toggle:checked ~ .overlay{
+  display: block;
+}
+
+/* hover navbarlist */
+
+.navbar-list a{
+  transition: all 0.9s ease-in;
+}
+
+.navbar-list a:hover {
+    color: black;
+    font-weight: 900px;
+    font-size: 25px;
+    transition: all 0.9s ease;
+}
+
+
+/* Escalado imagenes */
+
+.winter1,
+.winter2,
+.winter3,
+.winter4 {
+transition: all 0.4s ease-in;
+}
+
+.winter1:hover,
+.winter2:hover,
+.winter3:hover,
+.winter4:hover {
+transform: scale(1.1);
+transition: all 0.4s ease-in;
+background-color: var(--color2);
+}
+
+.accesories,
+.liquidacion,
+.trabajos-medida{
+transition: all 0.4s ease-in;
+}
+
+.accesories:hover,
+.liquidacion:hover,
+.trabajos-medida:hover{
+  cursor: pointer;
+transform: scale(1.1);
+transition: all 0.4s ease-in;
+background-color: var(--color2);
+}
+
+/* Boton ver coleccion */
+.img-winter:hover .btn-coleccion {
+    opacity: 1;
+    transition: all 0.4s ease-in-out;
+}
+
+.btn-coleccion {
+  transition: all 0.4s ease-in-out;
+}
+
+
+/* Cambiamos animacion a carrito */
+
+.cart{
+  position: absolute;
+  top: 65px;
+  right: 0;
+  padding: 5px 30px;
+  background: linear-gradient(
+    90deg,
+    rgba(254, 231, 224, 1) 10%,
+    rgba(194, 162, 155, 0.855) 50%,
+    rgba(254, 231, 224, 1) 90%
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  overflow-y: auto; /* Habilita el desplazamiento vertical */
+  /* display: none; */
+  z-index: 2;
+  gap: 5px;
+  transform: translate(200%);
+  transition: all 0.8s cubic-bezier(0.92, 0.01, 0.35, 0.99);
+}
+
+#cart-toggle:checked + .cart{
+  transform: translate(0%);
+  transition: all 0.8s cubic-bezier(0.92, 0.01, 0.35, 0.99);
+}
+
+/* Animacion en hover */
+
+.cart-label{
+  transition: all 0.2s ease-out;
+}
+
+.cart-label:hover {
+  color: var(--color3);
+  transition: all 0.2s ease-in;
+  border-color: var(--color1);
+  transform: scaleX(1.2);
+}
+
+/* Botones del carrito */
+
+.quantity-handler{
+  transition: all .2s ease-in;
+}
+
+.quantity-handler:hover{
+  cursor: pointer;
+  transition: all .2s ease-in;
+  background-color: var(--color3);
+}
+

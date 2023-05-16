@@ -50,7 +50,7 @@ header {
     rgba(254, 231, 224, 1) 90%
   );
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding:0px;
   /* Fixear el header en el top */
   position: fixed;
@@ -76,20 +76,29 @@ header {
   gap: 50px;
 }
 
+
+
 .navbar-list li:first-child > a {
   color: black;
-  font-size: 20px;
-  font-weight: bolder;
+  font-weight: 900;
+
 }
 
 .navbar-list a {
-  color: black;
-  font-weight: 900px;
+  color: whitesmoke;
+  
 }
+
+
 
 .logo-lana {
   padding-top: 2px;
   border-radius: 50px;
+  display: none;
+}
+
+.logo-carrito{
+  cursor: pointer;
 }
 
 /* Products */
@@ -124,6 +133,8 @@ header {
   justify-content: center;
 }
 
+
+
 .products {
   width: 95%;
   display: flex;
@@ -140,9 +151,30 @@ header {
   display: flex;
 flex-wrap: wrap;
 justify-content: center;
-  background-color: var(--color6);
+align-items: center;
+background-color: var(--color6);
+flex-direction: column;
 
 }
+
+
+.btn-coleccion {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 1.3s ease;
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  font-weight: 900;
+  color:var(--color8);
+  background-color: var(--color7);
+  width: 100%;
+}
+
 
 .img-winter {
 
@@ -150,14 +182,11 @@ justify-content: center;
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
 }
 
-.btn-coleccion {
-  border: black 0.5px solid;
-  padding: 1px 1px;
-  font-size: 10px;
-  cursor: pointer;
-}
 
 .text {
   font-size: 30px;
@@ -172,6 +201,10 @@ justify-content: center;
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
+}
+
+.temporada1{
+  padding-top: 15px;
 }
 
 /* Services */
@@ -287,7 +320,7 @@ justify-content: center;
   text-align: center;
   gap: 5px;
   background-color: var(--color7);
-
+  width: 30%;
   min-height: 275px;
 }
 
@@ -337,47 +370,100 @@ color: var(--color3);
   display: none;
 }
 
+/* Mostramos carrito */
 
-/* DAMOS FORMATO AL CARRITO */
+#cart-toggle:checked + .cart {
+  display: flex;
+}
+
+/* Damos formato al carrito*/
 
 .cart{
   position: absolute;
   top: 65px;
-  right: 0px;
-  padding: 30px 30px;
+  right: 0;
+  padding: 5px 30px;
   background: linear-gradient(
     90deg,
     rgba(254, 231, 224, 1) 10%,
     rgba(194, 162, 155, 0.855) 50%,
     rgba(254, 231, 224, 1) 90%
   );
-  border-left: 1px solid var(--color5);
   display: flex;
   flex-direction: column;
-  height: 70%;
-  overflow-y: scroll;
-  z-index: 2;
-  gap: 20px;
+  align-items: center;
+ 
+  height: 100vh;
+  overflow-y: auto; /* Habilita el desplazamiento vertical */
   display: none;
+  z-index: 2;
+  gap: 5px;
 }
+
+/* OCULTAR BARRA DE SCROLL DEL CARRITO */
 
 .cart::-webkit-scrollbar{
   display: none;
 }
 
 .cart h2{
-  color: black;
+  color: var(--color3);
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 900;
+  text-align: center;
 }
 
 .cart-item{
   display: flex;
   align-items: center;
   justify-content: center;
-  gap:10px;
+  gap:30px;
   background-color: var(--color1);
   padding: 10px;
-  border: 1px solid var(--color1);
+  border: 2px solid var(--color3);
   border-radius: 10px;
+
+}
+
+.cart-item img{
+  width: 30%;
+  border-radius: 10px;
+}
+
+.item-info{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 0.5rem;
+  width: 40%;
+}
+
+.item-price{
+  font-size: 0.75rem;
+  font-weight: 900;
+}
+
+.item-handler{
+  display: flex;
+  gap: 10px;
+}
+
+.quantity-handler-down,
+.quantity-handler-up{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid;
+  border-radius: 5px;
+  min-height: 10px;
+  min-width: 20px;
+}
+
+.btn-add{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--color7);
+  background-color: var(--color6);
+  width: 50%;
 }

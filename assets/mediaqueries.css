@@ -24,6 +24,7 @@
   .logo-lana {
     width: 105px;
     z-index: 3;
+    display: none;
   }
 
   .navbar-list {
@@ -33,13 +34,13 @@
     right: 5%;
     width: 90%;
     flex-direction: column;
-    background-color: var(--color2);
+    background-color: var(--color8);
     border-top: 0px;
     border-radius: 0px 0px 15px 15px;
     align-items: center;
     padding: 45px 30px;
     gap: 20px;
-    z-index: 2;
+    z-index: 3;
     display: none;
   }
 
@@ -63,6 +64,7 @@
     position: absolute;
     left: 95%;
     width: 30px;
+    cursor: pointer;
   }
 
   /* Products Main */
@@ -146,7 +148,7 @@
 }
 
 .logo-lana{
-  width: 34%;
+  min-width: 50px;
   padding: 2px;
 }
 
