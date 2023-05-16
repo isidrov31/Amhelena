@@ -140,7 +140,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 5px;
 }
 
 .winter1,
@@ -177,7 +177,7 @@ flex-direction: column;
 
 
 .img-winter {
-
+  width: 188px;
   min-height: 310px;
   display: flex;
   align-items: center;
